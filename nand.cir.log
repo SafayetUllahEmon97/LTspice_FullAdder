@@ -1,0 +1,15 @@
+C:\Users\et221\Documents\LTspice\nand.cir.txt(19): Expected device instantiation or directive here.
+.control
+^^^^^^^^
+C:\Users\et221\Documents\LTspice\nand.cir.txt(20): Expected node name here.
+run
+   ^
+C:\Users\et221\Documents\LTspice\nand.cir.txt(20): Expected device instantiation or directive here.
+run
+^^^
+C:\Users\et221\Documents\LTspice\nand.cir.txt(21): Expected nodes here.
+plot v(A) v(B) v(out)
+    ^^^^^^^^^^^^^^^^^
+C:\Users\et221\Documents\LTspice\nand.cir.txt(22): Expected device instantiation or directive here.
+.endc
+^^^^^

@@ -1,0 +1,26 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\et221\OneDrive\Documents\LTspice\fulladder.net
+Start Time: Fri Aug 21 23:06:14 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Changing Tseed to 7.8125e-12
+Changing Tseed to 7.8125e-14
+Total elapsed time: 0.354 seconds.
+
+Files loaded:
+C:\Users\et221\OneDrive\Documents\LTspice\fulladder.net
+C:\Users\et221\AppData\Local\LTspice\lib\cmp\standard.mos
+
+pavg: AVG(-V(vdd)*I(V3))=8.77468589274e-08 FROM 0 TO 8e-05
+trise_sum=1.12479278489e-12 FROM 3.44842862988e-10 TO 3.45967655773e-10
+tfall_sum=9.37726477181e-19 FROM 4.99999999568e-10 TO 5.00000000506e-10
+trise_carry=2.58866688308e-13 FROM 6.74115427845e-10 TO 6.74374294534e-10
+tfall_carry=8.50724223665e-13 FROM 5.001445169e-06 TO 5.00144601972e-06
+tpd_sum_rise=-1.54594733401e-10 FROM 4.99999992781e-10 TO 3.4540525938e-10
+tpd_sum_fall=-5.001e-06 FROM 5.0015e-06 TO 5.00000000037e-10
+tpd_carry_rise=1.7425117492e-10 FROM 4.99999992781e-10 TO 6.74251167701e-10
+tpd_carry_fall=-5.44056382748e-11 FROM 5.0015e-06 TO 5.00144559436e-06

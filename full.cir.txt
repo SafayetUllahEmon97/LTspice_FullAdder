@@ -1,0 +1,43 @@
+
+.include tsmc018.lib
+
+.model nmos NMOS
+.model pmos PMOS
+
+VDD vdd 0 1.8
+
+* Inputs (pulse for testing)
+VA A 0 PULSE(0 1.8 0 10p 10p 5n 10n)
+VB B 0 PULSE(0 1.8 0 10p 10p 10n 20n)
+VC C 0 PULSE(0 1.8 0 10p 10p 20n 40n)
+
+* XOR1 = A ⊕ B
+M1 n1 A vdd vdd pmos
+M2 n1 B vdd vdd pmos
+M3 n1 A n2 0 nmos
+M4 n2 B 0 0 nmos
+
+* XOR2 = (A ⊕ B) ⊕ C → SUM
+M5 SUM n1 vdd vdd pmos
+M6 SUM C vdd vdd pmos
+M7 SUM n1 n3 0 nmos
+M8 n3 C 0 0 nmos
+
+* Carry = AB + BC + CA
+M9 n4 A vdd vdd pmos
+M10 n4 B vdd vdd pmos
+M11 n5 B vdd vdd pmos
+M12 n5 C vdd vdd pmos
+M13 n6 A vdd vdd pmos
+M14 n6 C vdd vdd pmos
+
+M15 CARRY A n7 0 nmos
+M16 n7 B 0 0 nmos
+M17 CARRY B n8 0 nmos
+M18 n8 C 0 0 nmos
+M19 CARRY A n9 0 nmos
+M20 n9 C 0 0 nmos
+
+.tran 50n
+.end
+

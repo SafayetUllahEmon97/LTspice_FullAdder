@@ -1,0 +1,43 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\et221\OneDrive\Documents\LTspice\transmission.net
+Start Time: Fri Aug 21 23:10:04 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Instance "M1": Width narrower than recommended for a level 1 MOSFET.
+Instance "M3": Length shorter than recommended for a level 1 MOSFET.
+Instance "M3": Width narrower than recommended for a level 1 MOSFET.
+Instance "M5": Length shorter than recommended for a level 1 MOSFET.
+Instance "M5": Width narrower than recommended for a level 1 MOSFET.
+Instance "M7": Length shorter than recommended for a level 1 MOSFET.
+Instance "M7": Width narrower than recommended for a level 1 MOSFET.
+Instance "M29": Length shorter than recommended for a level 1 MOSFET.
+Instance "M29": Width narrower than recommended for a level 1 MOSFET.
+Instance "M2": Length shorter than recommended for a level 1 MOSFET.
+Instance "M2": Width narrower than recommended for a level 1 MOSFET.
+Instance "M4": Length shorter than recommended for a level 1 MOSFET.
+Instance "M4": Width narrower than recommended for a level 1 MOSFET.
+Instance "M6": Length shorter than recommended for a level 1 MOSFET.
+Instance "M6": Width narrower than recommended for a level 1 MOSFET.
+Instance "M8": Length shorter than recommended for a level 1 MOSFET.
+Instance "M8": Width narrower than recommended for a level 1 MOSFET.
+Instance "M30": Length shorter than recommended for a level 1 MOSFET.
+Instance "M30": Width narrower than recommended for a level 1 MOSFET.
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.290 seconds.
+
+Files loaded:
+C:\Users\et221\OneDrive\Documents\LTspice\transmission.net
+C:\Users\et221\AppData\Local\LTspice\lib\cmp\standard.mos
+
+pavg: AVG(-V(vdd)*I(V3))=5.52732624864e-08 FROM 0 TO 8e-05
+trise_sum=8.80788748539e-10 FROM 1.05875264087e-10 TO 9.86664012627e-10
+tfall_sum=-1.00004415719e-05 FROM 1.00010127335e-05 TO 5.71161620791e-10
+trise_carry=5.38292230895e-11 FROM 4.66182576718e-10 TO 5.20011799807e-10
+tfall_carry=3.47185233152e-10 FROM 3.00012923959e-05 TO 3.00016395812e-05
+tpd_sum_rise=-8.45651582881e-12 FROM 5.00000019665e-10 TO 4.91543503836e-10
+tpd_sum_fall=-1.00010048099e-05 FROM 1.00015e-05 TO 4.95190117373e-10
+tpd_carry_rise=1.52845907182e-11 FROM 5.00000019665e-10 TO 5.15284610383e-10
+tpd_carry_fall=1.99999298024e-05 FROM 1.00015e-05 TO 3.00014298024e-05

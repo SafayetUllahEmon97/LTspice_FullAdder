@@ -1,0 +1,28 @@
+Vdd VDD 0 5
+
+Va A 0 PULSE(0 5 0 1n 1n 5u 10u)
+Vb B 0 PULSE(0 5 0 1n 1n 10u 20u)
+
+.model nmos NMOS (VTO=0.7 KP=100u)
+.model pmos PMOS (VTO=-0.7 KP=50u)
+
+* Inverters
+M1 Abar A VDD VDD pmos L=1u W=2u
+M2 Abar A 0 0 nmos L=1u W=1u
+
+M3 Bbar B VDD VDD pmos L=1u W=2u
+M4 Bbar B 0 0 nmos L=1u W=1u
+
+* XOR core
+M5 S B Abar 0 nmos L=1u W=1u
+M6 S Bbar A 0 nmos L=1u W=1u
+
+M7 S B A VDD pmos L=1u W=2u
+M8 S Bbar Abar VDD pmos L=1u W=2u
+
+* Output inverter
+M9 Out S VDD VDD pmos L=1u W=2u
+M10 Out S 0 0 nmos L=1u W=1u
+
+.tran 40u
+.end

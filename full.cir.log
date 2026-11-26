@@ -1,0 +1,15 @@
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\et221\Documents\LTspice\full.cir.txt
+Start Time: Fri Apr 10 22:26:56 2026
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 0.394 seconds.
+
+Files loaded:
+C:\Users\et221\Documents\LTspice\full.cir.txt
+C:\Users\et221\Documents\LTspice\tsmc018.lib
+
